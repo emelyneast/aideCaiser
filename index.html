@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Aide Casier Judiciaire</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="titre"><img src="latest.png" width="100" height="100" ><h1>Aide Casier Judiciaire</h1><img src="LSSD.png" width="100" height="100"></div>
+    <div id="form-container" class="hidden">
+        
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            <label for="prenom">Prénom  :</label>
+            <input type="text" id="prenom" name="prenom" required>
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date" required><br><br>
+            <label for="CodeP">Code Pénal</label>
+            <select id="CodeP" name="CodeP">
+                <option value="15">Agression au premier degré: armes blanches et pistolets PPA</option>
+                <option value="16">Agression au second degré: armes automatique</option>
+                <option value="118">Agression sexuelle</option>
+                <option value="163">Atteinte à la défense national, entrave envers le fonctionnement normal des institution</option>
+                <option value="164">Atteinte à la défense nationale, intrusion sur un secteur dépositaire de la défense</option>
+                
+                <option value="144">Blanchiment de bien ou d’argent</option>
+                <option value="145">Blanchiment de bien ou d’argent en réunion</option>
+                <option value="183">Brandit une arme à feu</option>
+                
+                <option value="128">Complicité (évasion / meurtre …)</option>
+                <option value="156">Complot en étant fonctionnaire des force de l’ordre</option>
+                <option value="114">Corruption</option>
+                <option value="160">Création d’hostilité</option>
+                
+                <option value="142">Détournement de fond ou de bien</option>
+                <option value="125">Délit de fuite</option>
+                <option value="179">Distribution non autorisé d’une arme légale</option>
+                <option value="180">Distribution d’une arme illégale</option>
+                <option value="181">Distribution d’une arme de guerre</option>
+                <option value="135">Dommage à un bien</option>
+                
+                <option value="166">Entrave à la justice</option>
+                <option value="167">Entrave à la justice en étant dépositaire de l’autorité publique</option>
+                <option value="140">Escroquerie</option>
+                <option value="141">Escroquerie d’un membre dépositaire de l'autorité publique</option>
+                <option value="119">Exhibition sexuelle</option>
+                <option value="136">Extorsion</option>
+                <option value="137">Extorsion avec visage dissimulé</option>
+                <option value="138">Extorsion sur un membres dépositaire de l’autorité publique</option>
+                
+                <option value="174">Fabrication de stupéfiants</option>
+                <option value="157">Fausse information</option>
+                <option value="127">Faux et usage de Faux</option>
+                
+                <option value="12">Homicide involontaire</option>
+                
+                <option value="14">Incitation au suicide</option>
+                <option value="162">Incitation d’un crime contre l’Etat</option>
+                
+                <option value="18">Légitime défense </option>
+                <option value="158">Livraison d’information ou de matériels à un ennemie de l’Etat relevant d’un secret national </option>
+                <option value="159">Livraison d’information ou de matériels à un ennemie de l’Etat relevant d’un secret de la défense nationale</option>
+                
+                <option value="150">Manifestation illégale</option>
+                <option value="154">Menace Criminelle</option>
+                <option value="11">Meutre / assasinat</option>
+                <option value="13">Mise en danger de la vie d'autrui</option>
+                
+                <option value="17">Non assistance à personne en danger</option>
+                <option value="139">Non paiement d'un service </option>
+                
+                <option value="19">Outrage envers un organisme public</option>
+                <option value="111">Outrage envers un agent assermenté: LSPD, Municipaux ….</option>
+                <option value="112">Outrage en fait d’arrestation</option>
+                <option value="113">Outrage en réunion</option>
+                
+                <option value="177">Possession d’une arme à feu illégale (par armes)</option>
+                <option value="176">Possession d’une arme à feu légale sans licence</option>
+                <option value="178">Possession d’un équipement ou d’une arme de guerre en continuité à l’Article 12 de la Mairie (par armes)</option>
+                <option value="175">Possession d’une lame</option>
+                <option value="171">Possession de stupéfiants</option>
+                <option value="120">Prise d’otage</option>
+                <option value="122">Prise de pouvoir sur un personne</option>
+                
+                <option value="123">Racket</option>
+                <option value="124">Racket aggravé </option>
+                <option value="126">Refus d’obtempérer</option>
+                <option value="143">Recel</option>
+                
+                <option value="161">Sabotage</option>
+                <option value="165">Survol d’une zone interdite ou militaire</option>
+                
+                <option value="115">Tentative de corruption</option>
+                <option value="155">Terrorisme</option>
+                <option value="173">Trafic de stupéfiants</option>
+                <option value="182">Trafic d'arme</option>
+                <option value="170">Tentative de coup d'état</option>
+                <option value="121">Torture</option>
+                <option value="147">Trouble à l’ordre publique en ayant le visage dissimulé</option>
+                <option value="148">Trouble à l’ordre publique en état d’ivresse sur la voie publique</option>
+                <option value="149">Trouble à l'ordre publique dans le cadre d’un rassemblement</option>
+                <option value="151">Trouble à l’ordre publique dans le cadre d’un rassemblement avec le visage dissimulé</option>
+                <option value="152">Trouble à l’ordre publique provoquant des blessures corporelles</option>
+                <option value="153">Trouble à l’ordre publique causant la mort</option>
+                
+                <option value="168">Usurpation d’identité</option>
+                <option value="169">Usurpation de fonction</option>
+                
+                <option value="184">Utilisation d'une arme depuis un véhicule terrestre, marin ou aérien</option>
+
+                <option value="172">Vente de stupéfiants</option>
+                <option value="116">Viol</option>
+                <option value="117">Viol en réunion</option>
+                <option value="146">Violation de la propriété privé</option>
+                <option value="129">Vol d’un bien</option>
+                <option value="132">Vol alias braquage ou cambriolage d’une maison ou d’une entreprise</option>
+                <option value="131">Vol avec visage dissimulé</option>
+                <option value="134">Vol d’une propriété appartenant à l'état</option>
+                <option value="133">Vol effectué avec une arme</option>
+                <option value="130">Vol en réunion</option>
+                
+                
+                
+                
+            </select><br>
+            <div id="lsiteCP"></div>
+            <button id="ajoutCP">Ajouter</button>
+            <br>
+            <label for="CDR">Code de la route :</label>
+            <select id="CDR" name="CDR">
+                <option value="23">Absence de céder le passage à un véhicule prioritaire</option>
+                <option value="214">Accident Involontaire</option>
+                <option value="216">Accident Involontaire Provoquant la mort</option>
+                <option value="215">Accident volontaire ou en tord</option>
+                <option value="217">Accident volontaire ou en tord provoquant la mort</option>
+                <option value="231">Arrêt ou stationnement en sens inverse de la circulation</option>
+               
+                <option value="26">Chevauchement d'une ligne continue</option>
+                <option value="25">Conduite à contre-sens</option>
+                <option value="221">Conduite d’un véhicule endommagé</option>
+                <option value="224">Conduite d’un véhicules non Homologuer en continuité à l’article 9.2 de la mairie</option>
+                <option value="24">Conduite hors de la chaussée</option>
+                <option value="212">Conduite sans permis de conduire</option>
+                <option value="210">Conduite sous état d’ivresse, sous l’emprise de stupéfiant ou de médicament</option>
+                <option value="211">Course de rue</option>
+                
+                <option value="218">Défaut de feux</option>
+                <option value="27">Dépassement d’un véhicule prioritaire</option>
+                
+                <option value="21">Excès de vitesse</option>
+                
+                <option value="29">Klaxon en agglomération sans danger immédiat</option>
+                
+                <option value="219">Nuisance sonore du véhicule</option>
+                <option value="22">Non respect d’un feu tricolore</option>
+                
+                <option value="227">Ouverture dangereuse de portière</option>
+                
+                <option value="213">Pilotage d'un véhicule aérien sans brevet de pilote</option>
+                <option value="220">Possession illégale d’un système hydraulique</option>
+                <option value="223">Possession illégale de N.O.S.</option>
+               
+                <option value="226">Refus de se soumettre à un dispositif, sonore ou visuel, de contrôle routier</option>
+                
+                <option value="228">Stationnement interdit: Véhicule terrestre</option>
+                <option value="229">Stationnement interdit pouvant entraver les autorités publique: Véhicule terrestre</option>
+                <option value="230">Stationnement interdit: Véhicule aérien</option>
+                
+                <option value="28">Téléphone au volant</option>
+                <option value="225">Traverser en dehors du passage piéton</option>
+                
+                <option value="222">Utilisation du moteur à des régime excessifs</option>
+                
+               
+            </select>
+            <div id="lsiteCDR"></div>
+            <br>
+            <button id="ajoutCDR">Ajouter</button>
+            <br>
+            <button id="envoie" type="submit">Soumettre</button>
+        
+    </div>
+
+    <div id="result-container">
+        <h2>Résultats</h2>
+        <p><u><b>[u][b]NOM (MAJUSCULE) Prénom (Minuscule) :[/b][/u]</b></u> <span id="resultNom"></span></p>
+        <p><u><b>[u][b]Délits :[/b][/u]</b></u></p>
+        <ul id="resultDelits"></ul> 
+        <br>
+        <p><u><b>[b][u]Photo de Face :[/u][/b]</b></u></p>
+        <img src="profilGray.png" id="resultPhotoFace" >
+        <p><u><b>[u][b]Photo de Profil :[/b][/u]</b></u></p>
+        <img src="profilGrayF.png" id="resultPhotoProfil">
+        <br>
+       
+        <h3 id="info"><u>Information</u></h3>
+        <div class="hidden" id="infoDiv">
+            <p><b>Amende :</b> <span id="resultAmende"></span></p>
+            <p><b>Temps de GAV:</b> <span id="resultGAV"></span></p>
+            <p><b>Temps de prison Minimum:</b> <span id="resultPrison"></span></p>
+            <p><b>Temps de prison Maximum:</b> <span id="resultPrisonMax"></span></p>
+            <p><b>Autres:</b> <span id="autres"></span></p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
